@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        /* using Library - Retrofit
+
         imageView = findViewById(R.id.imageViewID);
-        Picasso.get().load(Uri.parse(IMAGE_URL)).into(imageView);*/
-        new DownloadTask().execute(IMAGE_URL);
+        Picasso.get().load(Uri.parse(IMAGE_URL)).into(imageView);
+       // new DownloadTask().execute(IMAGE_URL);
     }
 
     class DownloadTask extends AsyncTask<String,Void,Bitmap>{
